@@ -5,6 +5,7 @@ function Tasks({tasks, onDeleteTaskClick, onTaskClick}) {
   const navigator = useNavigate();
 
   function onSeeDetailsClick(task){
+    //tratamento das query params, URLSearchParams é uma API nativa do JS que facilita a manipulação de query params
     const query = new URLSearchParams();
     query.set("title", task.title);
     query.set("description", task.description);
