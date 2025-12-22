@@ -4,8 +4,9 @@ import { useNavigate } from "react-router-dom";
 function Tasks({tasks, onDeleteTaskClick, onTaskClick}) {
   const navigator = useNavigate();
 
-  function onSeeDetailsClick(task){
+  function onSeeDetailsClick(task){ 
     //tratamento das query params, URLSearchParams é uma API nativa do JS que facilita a manipulação de query params
+    //o new URLSearchParams() cria um objeto que representa os parâmetros da URL
     const query = new URLSearchParams();
     query.set("title", task.title);
     query.set("description", task.description);
