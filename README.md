@@ -1,14 +1,60 @@
-# Gerenciador de tarefas simples com React + Vite and Tailwind CSS
-*(Totalmente para fins didáticos)*
+# Task Manager
 
-## Conceitos
-### `React:` Biblioteca JavaScript de código aberto para desenvolvimento de interfaces de usuário (UI)
-### `Vite:` Ferramenta de construção de projetos front-end que visa oferecer uma experiência de desenvolvimento mais rápida e eficiente para aplicações web modernas
-### `Tailwind CSS:` Tailwind CSS é um framework de CSS que adota uma abordagem utility-first, permitindo criar interfaces modernas diretamente no HTML. 
+![React](https://img.shields.io/badge/React-19-blue)
+![Vite](https://img.shields.io/badge/Vite-7-purple)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para gerenciamento de tarefas desenvolvida com React e Tailwind CSS para pratica de conceitos fundamenais de React.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cadastro de tarefas
+- Edição de tarefas
+- Marcação de tarefas concluídas
+- Exclusão de tarefas
+
+## Como Executar
+
+```bash
+git clone https://github.com/zluckas/task_manager.git
+cd task_manager
+npm install
+npm run dev
+```
+
+Acesse `http://localhost:5173`.
+
+## Estrutura do Projeto
+
+```
+.
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   ├── AddTask.jsx
+│   │   ├── DetailTask.jsx
+│   │   └── Tasks.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── pages
+│       └── TaskPages.jsx
+├── tailwind.config.js
+└── vite.config.js
+
+```
+
+#
+
+_Por <a href="https://github.com/zluckas">Lucas Nóbrega</a>_
+
+
+
